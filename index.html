@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>四情境平均分派問卷</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section id="cover-screen" class="screen active">
+      <div class="hero-card">
+        <p class="eyebrow">Research Questionnaire</p>
+        <h1 id="app-title">四情境平均分派問卷</h1>
+        <p id="app-subtitle" class="subtitle">一個網站、四個情境、共同題目、平均分派樣本</p>
+        <div class="hero-note" id="research-note"></div>
+        <button id="start-btn" class="primary-button" type="button">開始填答</button>
+      </div>
+    </section>
+
+    <section id="question-screen" class="screen">
+      <div class="topbar">
+        <button id="prev-btn" class="ghost-button" type="button">上一頁</button>
+        <div id="progress-bar-wrap" class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progress-page-text">第 1 / 1 頁</span>
+            <span id="progress-percent-text">0%</span>
+          </div>
+          <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+        </div>
+      </div>
+
+      <div id="page-header" class="page-header"></div>
+      <div id="question-list" class="question-list"></div>
+      <div class="navigation-row">
+        <button id="next-btn" class="primary-button" type="button">下一頁</button>
+      </div>
+    </section>
+
+    <section id="finish-screen" class="screen">
+      <div class="finish-card">
+        <p class="eyebrow">Submitted</p>
+        <h1>問卷已送出，謝謝你！</h1>
+        <p>你的回答已經成功寫入 Google Sheet。</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="scenarios.js"></script>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
